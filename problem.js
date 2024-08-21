@@ -900,4 +900,33 @@
 // sortPeople(["Mary","John","Emma"],[180,165,170])
 
 // ==========================================================================>  
-  // revision on problems
+// ==========================================================================>  
+// ==========================================================================>  
+// ==========================================================================>  
+  // revision on problems  codewars
+
+// ==========================================================================>  evenOrOdd
+// function evenOrOdd(number) {
+//   let num =  number %2 ==0? "even" : "odd"
+//   console.log(num);
+// }
+
+// evenOrOdd(0)
+
+// ==========================================================================>  positiveSum
+
+// function positiveSum(arr) {
+  //   let sum = arr.filter( (num)=>num>=0 ).reduce( (sum , num)=> sum + num ,0);
+  //   console.log(sum);
+    
+  // }
+  // positiveSum([-1, -4, -7])
+  
+  // ==========================================================================>  Sum without highest and lowest number
+
+  // function sumArray(arr) {
+  //   let sum = arr? arr.sort((a,b)=>a-b).slice(1, -1).reduce( (sum , num)=>sum + num , 0 ): 0;
+  //   console.log(sum);
+    
+  // }
+  // sumArray([6, 2, 1, 8, 10])
