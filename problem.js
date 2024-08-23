@@ -903,7 +903,7 @@
 // ==========================================================================>  
 // ==========================================================================>  
 // ==========================================================================>  
-  // revision on problems  codewars
+// revision on problems  codewars
 
 // ==========================================================================>  evenOrOdd
 // function evenOrOdd(number) {
@@ -916,17 +916,36 @@
 // ==========================================================================>  positiveSum
 
 // function positiveSum(arr) {
-  //   let sum = arr.filter( (num)=>num>=0 ).reduce( (sum , num)=> sum + num ,0);
-  //   console.log(sum);
-    
-  // }
-  // positiveSum([-1, -4, -7])
-  
-  // ==========================================================================>  Sum without highest and lowest number
+//   let sum = arr.filter( (num)=>num>=0 ).reduce( (sum , num)=> sum + num ,0);
+//   console.log(sum);
 
-  // function sumArray(arr) {
-  //   let sum = arr? arr.sort((a,b)=>a-b).slice(1, -1).reduce( (sum , num)=>sum + num , 0 ): 0;
-  //   console.log(sum);
-    
-  // }
-  // sumArray([6, 2, 1, 8, 10])
+// }
+// positiveSum([-1, -4, -7])
+
+// ==========================================================================>  Sum without highest and lowest number
+
+// function sumArray(arr) {
+//   let sum = arr? arr.sort((a,b)=>a-b).slice(1, -1).reduce( (sum , num)=>sum + num , 0 ): 0;
+//   console.log(sum);
+
+// }
+// sumArray([6, 2, 1, 8, 10])
+
+// ==========================================================================>  String-repeat
+
+// function repeatStr (num, str) {
+//   let result = str.repeat(num)
+//   console.log(result);
+
+// }
+// repeatStr(5, "*")
+
+
+// ==========================================================================> Convert number to reversed array of digits
+
+function digitize(num) {
+  let result = num.toString().split('').reverse().map(Number)
+  console.log(result) ;
+
+}
+digitize(35231)
