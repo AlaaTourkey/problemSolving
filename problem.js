@@ -943,9 +943,75 @@
 
 // ==========================================================================> Convert number to reversed array of digits
 
-function digitize(num) {
-  let result = num.toString().split('').reverse().map(Number)
-  console.log(result) ;
+// function digitize(num) {
+//   let result = num.toString().split('').reverse().map(Number)
+//   console.log(result) ;
+
+// }
+// digitize(35231)
+
+// ==========================================================================> Counting sheep...
+
+// function countSheeps(sheep) {
+//   let initialnum = 0;
+
+//   for (let i = 0; i < sheep.length; i++) {
+//     if (sheep[i] === true) {
+//       initialnum ++ ;
+//     }
+//   }
+//   ==================or
+
+//   let result = sheep.map((item) => {
+//       if (item === true )
+//       return initialnum++ 
+//   })
+//   console.log(initialnum);
+
+//   ==================or
+
+//   sheep.map( item=> item ===true? initialnum ++ : '')
+//   console.log(initialnum);
+
+
+// }
+// countSheeps([undefined, null, false, true, true, false, null, undefined]);
+
+// ==========================================================================> Jenny's secret message
+
+// function greet(name){
+
+//   if(name === "Johnny"){
+//     return "Hello, my love!";
+//   }else{
+//     return "Hello, " + name + "!";
+//   }
+// }
+// console.log(greet('alaa'));
+
+// ==========================================================================> A Needle in the Haystack
+
+// function findNeedle(haystack) {
+//   let result = "found the needle at position " + haystack.indexOf('needle')
+//   console.log(result);
+
+// }
+// findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
+
+// ==========================================================================>  Count-of-positives-sum-of-negatives
+function countPositivesSumNegatives(input) {
+  let posNum = 0;
+  let negSum = 0;
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] > 0) {
+      posNum++;
+    } else {
+      negSum += input[i];
+    }
+  }
+  return [posNum, negSum]
+
 
 }
-digitize(35231)
+
+console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
