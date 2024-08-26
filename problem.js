@@ -999,19 +999,53 @@
 // findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
 
 // ==========================================================================>  Count-of-positives-sum-of-negatives
-function countPositivesSumNegatives(input) {
-  let posNum = 0;
-  let negSum = 0;
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] > 0) {
-      posNum++;
-    } else {
-      negSum += input[i];
-    }
-  }
-  return [posNum, negSum]
+// function countPositivesSumNegatives(input) {
+  //   let posNum = 0;
+//   let negSum = 0;
+//   for (let i = 0; i < input.length; i++) {
+//     if (input[i] > 0) {
+//       posNum++;
+//     } else {
+//       negSum += input[i];
+//     }
+//   }
+//   return [posNum, negSum]
 
 
+// }
+
+// console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
+
+// ==========================================================================>  Double Char
+// function doubleChar(str) {
+//   let result = str.split('').map( (item)=> item.repeat(2)).join('') 
+//   console.log(result);
+// }
+// doubleChar('String')
+
+// ==========================================================================> Basic Mathematical Operations
+
+// function basicOp(operation, value1, value2){
+//   let result =  eval(value1 + operation + value2) ;
+//   console.log(result);
+
+// }
+
+// basicOp('+', 4, 7)
+// ==========================================================================> To Square Root Or Not To Square Root
+// function squareOrSquareRoot(array) {
+//   let result = array.map( (item)=> Math.sqrt(item)%1==0 ? Math.sqrt(item) : item*item  )
+//   console.log(result);
+
+// }
+
+// squareOrSquareRoot([4,3,9,7,2,1])
+// ==========================================================================> Count by X
+
+function countBy(x, n) {
+  let z = [];
+  let result = Array(n).fill().map((_, i) => (i + 1) * x);
+  console.log(result);
+  return z;
 }
-
-console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));
+countBy(2,5)
