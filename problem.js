@@ -1042,10 +1042,10 @@
 // squareOrSquareRoot([4,3,9,7,2,1])
 // ==========================================================================> Count by X
 
-function countBy(x, n) {
-  let z = [];
-  let result = Array(n).fill().map((_, i) => (i + 1) * x);
-  console.log(result);
-  return z;
-}
-countBy(2,5)
+// function countBy(x, n) {
+//   let z = [];
+//   let result = Array(n).fill().map((_, i) => (i + 1) * x);
+//   console.log(result);
+//   return z;
+// }
+// countBy(2,5)
