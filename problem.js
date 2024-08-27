@@ -1000,7 +1000,7 @@
 
 // ==========================================================================>  Count-of-positives-sum-of-negatives
 // function countPositivesSumNegatives(input) {
-  //   let posNum = 0;
+//   let posNum = 0;
 //   let negSum = 0;
 //   for (let i = 0; i < input.length; i++) {
 //     if (input[i] > 0) {
@@ -1049,3 +1049,43 @@
 //   return z;
 // }
 // countBy(2,5)
+
+// ==========================================================================> Remove String Spaces
+
+// function noSpace(x){
+//   let result = x.split(' ').join('')
+//   console.log(result);
+
+// }
+
+// noSpace("8 j 8   mBliB8g  imjB8B8  jl  B")
+
+// ==========================================================================> positive becomes negatives, and the negatives become positives
+
+// function invert(array) {
+//   let result = array.map( (item)=> item*-1  )
+//   console.log(result);
+
+// }
+
+// invert([1, -2, 3, -4, 5])
+
+// ==========================================================================> Convert boolean values to strings 'Yes' or 'No'
+// function boolToWord( bool ){
+//   return bool ===true ? 'Yes' :'No'
+// }
+// boolToWord(true)
+
+// ==========================================================================> Reversing Words in a String
+// function reverse(string) {
+  //   let result = string.split(' ').reverse().join(' ')
+  //   console.log(result);
+  
+// }
+// reverse('Hello World')
+// ==========================================================================> Keep Hydrated  0.5 litres of water per hour of cycling.
+
+// function litres(time) {
+//   return Math.floor(time/2)
+// }
+// litres(3)
