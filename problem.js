@@ -1175,7 +1175,7 @@
 // function numberToString(num) {
 //     let result = num.toString()
 //     console.log(typeof(result));
-    
+
 //   }
 //   numberToString(123)
 
@@ -1186,7 +1186,7 @@
 //     // }
 //   let result = array.length === 0 ? 0 : array.reduce( (sum,num)=> sum+=num   )/array.length
 //   console.log(result);
-  
+
 // }
 
 // findAverage([])
@@ -1200,13 +1200,101 @@
 
 // ==========================================================================> Count The Monkeys 
 
-function monkeyCount(n) {
-  let monkeys = [];
-  for (let i = 1; i <= n; i++) {
-    monkeys.push(i);
-  }
-  console.log(monkeys);
-  return monkeys;
-}
+// function monkeyCount(n) {
+//   let monkeys = [];
+//   for (let i = 1; i <= n; i++) {
+//     monkeys.push(i);
+//   }
+//   console.log(monkeys);
+//   return monkeys;
+// }
 
-monkeyCount(5);
+// monkeyCount(5);
+
+// ==========================================================================> Welcome
+
+// function greet(language) {
+//   let languages = {
+//     english: "Welcome",
+//     czech: "Vitejte",
+//     danish: "Velkomst",
+//     dutch: "Welkom",
+//     estonian: "Tere tulemast",
+//     finnish: "Tervetuloa",
+//     flemish: "Welgekomen",
+//     french: "Bienvenue",
+//     german: "Willkommen",
+//     irish: "Failte",
+//     italian: "Benvenuto",
+//     latvian: "Gaidits",
+//     lithuanian: "Laukiamas",
+//     polish: "Witamy",
+//     spanish: "Bienvenido",
+//     swedish: "Valkommen",
+//     welsh: "Croeso"
+//   }
+//   if (languages.hasOwnProperty(language)) {
+//     return languages[language]
+//   } else {
+//     return languages['english']
+//   }
+// }
+// console.log(greet('czech'));
+
+// ==========================================================================> Sentence Smash
+
+// function smash (words) {
+//   let result =words.join(' ')
+//   console.log(result);
+
+// };
+// smash(['hello', 'world', 'this', 'is', 'great'])
+
+// ==========================================================================> Switch it Up!
+
+// function switchItUp(number) {
+  //   switch (number) {
+    //     case 0:
+//       return 'zero'
+//     case 1:
+//       return 'one'
+//     case 2:
+//       return 'two'
+//     case 3:
+//       return 'three'
+//     case 4:
+//       return 'four'
+//     case 5:
+//       return 'five'
+//     case 6:
+//       return 'sex'
+//     case 7:
+//       return 'seven'
+//     case 8:
+//       return 'eight'
+//     case 9:
+//       return 'nine'
+  
+//     default:'wrong number'
+//   }
+// }
+// console.log(switchItUp(2));
+
+
+// ==========================================================================> Do I Get A Bonus
+// function bonusTime(salary, bonus) {
+  //   // let result  = bonus == true ?"£" + salary*100 :"£" + salary
+  //   let result  = bonus == true ?`£${salary*100}` :`£ ${salary}`
+//   console.log(result);
+
+
+// }
+
+// bonusTime(10,true)
+
+// ==========================================================================> Exclamation marks series
+function remove (string) {
+
+  return string.replace(/!+/g, "")+"!"; 
+}
+console.log(remove('hi!!!!'));
