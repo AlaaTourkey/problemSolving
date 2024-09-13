@@ -126,6 +126,22 @@
 // };
 // console.log(twoSum([3, 2, 4], 6));
 
+// function findTwoNumbers(arr, target) {
+//   let numbers = []
+//   for (let i = 0; i < arr.length; i++) {
+//     const complement = target - arr[i] ;
+//     if (complement in numbers) {
+//       return [complement , arr[i]];
+//     }
+//     numbers[arr[i]] = i;
+
+
+//   }
+//   return []
+// }
+// const result = findTwoNumbers([2, 7, 11, 15], 9);
+// console.log(result)
+
 // ==========================================================================>  concate two arrays
 
 // var getConcatenation = function(nums) {
@@ -891,13 +907,14 @@
 // ==========================================================================>  Sort the People
 // var sortPeople = function(names, heights) {
 //   let sortedArr = [...heights].sort();
-//   let res = [];
+//   let res = []; 
 //   for (let i = 0; i < sortedArr.length; i++) {
 //     res.push(names[heights.indexOf(sortedArr[i])]);
 //   }
 //   console.log(res);
 // };
 // sortPeople(["Mary","John","Emma"],[180,165,170])
+
 
 // ==========================================================================>  
 // ==========================================================================>  
@@ -1040,8 +1057,14 @@
 // }
 
 // squareOrSquareRoot([4,3,9,7,2,1])
-// ==========================================================================> Count by X
+// ==========================================================================> palindrome
+// function isPalindrome(x) {
+//   return x.split('').reverse().join('').toLowerCase() === x.toLowerCase() ?true : false
+// }
+// console.log(isPalindrome('Abbax'));
 
+
+// ==========================================================================> Count by X
 // function countBy(x, n) {
 //   let z = [];
 //   let result = Array(n).fill().map((_, i) => (i + 1) * x);
@@ -1078,9 +1101,9 @@
 
 // ==========================================================================> Reversing Words in a String
 // function reverse(string) {
-  //   let result = string.split(' ').reverse().join(' ')
-  //   console.log(result);
-  
+//   let result = string.split(' ').reverse().join(' ')
+//   console.log(result);
+
 // }
 // reverse('Hello World')
 // ==========================================================================> Keep Hydrated  0.5 litres of water per hour of cycling.
@@ -1089,3 +1112,101 @@
 //   return Math.floor(time/2)
 // }
 // litres(3)
+
+// ==========================================================================> interview
+
+
+// function palindrome(x){
+//   let result = x.split('').reverse().join('') === x? true : false;
+//   console.log(result);
+
+// }
+
+// palindrome('madama');
+
+
+// function sumNum(arr) {
+//   let result =arr.reduce( (sum , num)=> sum +=num ,0 )
+//   console.log(result);
+// }
+// sumNum([1,2])
+
+
+// function numbers(nums,target) {
+//   let arrCom = []
+//   for (let i = 0; i < nums.length; i++) {
+//     let complement = target- nums[i]
+//     for (const complement in nums) {
+//       arrCom.push(x[complement]);
+//       console.log(nums);
+
+//     }
+
+//   }
+
+// }
+// console.log(numbers([2, 7, 11, 15], 9));
+
+// function rearrange(arr) {
+//   arr.sort((a, b) => a - b)
+//   console.log(arr);
+
+// }
+// rearrange([2, 7, 11, 15,-1,-2])
+
+
+
+// const x = {
+//   y: 2,  
+// }
+
+// function AB(u) {
+//   u.y = 1
+//   return x 
+// }
+
+// AB(x)
+
+// console.log(x)  //1
+
+
+// ==========================================================================>  Convert a Number to a String
+
+// function numberToString(num) {
+//     let result = num.toString()
+//     console.log(typeof(result));
+    
+//   }
+//   numberToString(123)
+
+// ==========================================================================>  Calculate average
+// function findAverage(array) {
+//   // if (array === null || array.length ===0 ) {
+//     //   return 0;
+//     // }
+//   let result = array.length === 0 ? 0 : array.reduce( (sum,num)=> sum+=num   )/array.length
+//   console.log(result);
+  
+// }
+
+// findAverage([])
+
+// ==========================================================================> Convert a String to a Number
+
+// const stringToNumber = function(str){
+//   return Number(str)
+// }
+// console.log(typeof(stringToNumber('123')));
+
+// ==========================================================================> Count The Monkeys 
+
+function monkeyCount(n) {
+  let monkeys = [];
+  for (let i = 1; i <= n; i++) {
+    monkeys.push(i);
+  }
+  console.log(monkeys);
+  return monkeys;
+}
+
+monkeyCount(5);
