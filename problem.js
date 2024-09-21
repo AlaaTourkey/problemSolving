@@ -1252,45 +1252,45 @@
 
 // ==========================================================================> Switch it Up!
 
-// function switchItUp(number) {
-  //   switch (number) {
-    //     case 0:
-//       return 'zero'
-//     case 1:
-//       return 'one'
-//     case 2:
-//       return 'two'
-//     case 3:
-//       return 'three'
-//     case 4:
-//       return 'four'
-//     case 5:
-//       return 'five'
-//     case 6:
-//       return 'sex'
-//     case 7:
-//       return 'seven'
-//     case 8:
-//       return 'eight'
-//     case 9:
-//       return 'nine'
+function switchItUp(number) {
+    switch (number) {
+        case 0:
+      return 'zero'
+    case 1:
+      return 'one'
+    case 2:
+      return 'two'
+    case 3:
+      return 'three'
+    case 4:
+      return 'four'
+    case 5:
+      return 'five'
+    case 6:
+      return 'sex'
+    case 7:
+      return 'seven'
+    case 8:
+      return 'eight'
+    case 9:
+      return 'nine'
   
-//     default:'wrong number'
-//   }
-// }
-// console.log(switchItUp(2));
+    default:'wrong number'
+  }
+}
+console.log(switchItUp(2));
 
 
 // ==========================================================================> Do I Get A Bonus
-// function bonusTime(salary, bonus) {
-  //   // let result  = bonus == true ?"£" + salary*100 :"£" + salary
-  //   let result  = bonus == true ?`£${salary*100}` :`£ ${salary}`
-//   console.log(result);
+function bonusTime(salary, bonus) {
+    // let result  = bonus == true ?"£" + salary*100 :"£" + salary
+    let result  = bonus == true ?`£${salary*100}` :`£ ${salary}`
+  console.log(result);
 
 
-// }
+}
 
-// bonusTime(10,true)
+bonusTime(10,true)
 
 // ==========================================================================> Exclamation marks series
 function remove (string) {
