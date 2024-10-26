@@ -1252,49 +1252,78 @@
 
 // ==========================================================================> Switch it Up!
 
-function switchItUp(number) {
-    switch (number) {
-        case 0:
-      return 'zero'
-    case 1:
-      return 'one'
-    case 2:
-      return 'two'
-    case 3:
-      return 'three'
-    case 4:
-      return 'four'
-    case 5:
-      return 'five'
-    case 6:
-      return 'sex'
-    case 7:
-      return 'seven'
-    case 8:
-      return 'eight'
-    case 9:
-      return 'nine'
+// function switchItUp(number) {
+//     switch (number) {
+//         case 0:
+//       return 'zero'
+//     case 1:
+//       return 'one'
+//     case 2:
+//       return 'two'
+//     case 3:
+//       return 'three'
+//     case 4:
+//       return 'four'
+//     case 5:
+//       return 'five'
+//     case 6:
+//       return 'sex'
+//     case 7:
+//       return 'seven'
+//     case 8:
+//       return 'eight'
+//     case 9:
+//       return 'nine'
   
-    default:'wrong number'
-  }
-}
-console.log(switchItUp(2));
+//     default:'wrong number'
+//   }
+// }
+// console.log(switchItUp(2));
 
 
-// ==========================================================================> Do I Get A Bonus
-function bonusTime(salary, bonus) {
-    // let result  = bonus == true ?"£" + salary*100 :"£" + salary
-    let result  = bonus == true ?`£${salary*100}` :`£ ${salary}`
-  console.log(result);
+// // ==========================================================================> Do I Get A Bonus
+// function bonusTime(salary, bonus) {
+//     // let result  = bonus == true ?"£" + salary*100 :"£" + salary
+//     let result  = bonus == true ?`£${salary*100}` :`£ ${salary}`
+//   console.log(result);
 
 
-}
+// }
 
-bonusTime(10,true)
+// bonusTime(10,true)
 
 // ==========================================================================> Exclamation marks series
-function remove (string) {
+// function remove (string) {
+  
+//   return string.replace(/!+/g, "")+"!"; 
+// }
+// console.log(remove('hi!!!!'));
 
-  return string.replace(/!+/g, "")+"!"; 
+
+
+// ==========================================================================> Are You Playing Banjo
+
+// function areYouPlayingBanjo(name) {
+  //     if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
+//       return `${name} plays banjo`
+//     }else{
+//       return `${name} does not play banjo`
+//     }
+
+//     // or
+
+//     return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
+// }
+
+// console.log(areYouPlayingBanjo('Ramy'));
+
+
+
+// ==========================================================================> Removing Elements
+
+function removeEveryOther(arr){
+
+  let result = arr.filter((item, index) => index % 2 === 0)
+  console.log(result);
 }
-console.log(remove('hi!!!!'));
+removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
