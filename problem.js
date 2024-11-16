@@ -1321,9 +1321,30 @@
 
 // ==========================================================================> Removing Elements
 
-function removeEveryOther(arr){
+// function removeEveryOther(arr){
+  
+//   let result = arr.filter((item, index) => index % 2 === 0)
+//   console.log(result);
+// }
+// removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
 
-  let result = arr.filter((item, index) => index % 2 === 0)
-  console.log(result);
+// ==========================================================================> Transportation On Vacation
+
+function rentalCarCost(d) {
+    let price = 40*d;
+    if (d >= 7) {
+      return price - 50
+    }else if (d >= 3) {
+      return price - 20
+    }else{
+      return price
+    }
 }
-removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
+console.log(rentalCarCost(10));
+
+// ==========================================================================> Exclusive Xor Operator
+function xor(a, b) {
+  return a === b ? false : true
+}
+console.log(xor('true', 'false'));
+
