@@ -1303,30 +1303,30 @@
 
 // ==========================================================================> Are You Playing Banjo
 
-// function areYouPlayingBanjo(name) {
-  //     if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
-//       return `${name} plays banjo`
-//     }else{
-//       return `${name} does not play banjo`
-//     }
+function areYouPlayingBanjo(name) {
+      if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
+      return `${name} plays banjo`
+    }else{
+      return `${name} does not play banjo`
+    }
 
-//     // or
+    // or
 
-//     return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
-// }
+    return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
+}
 
-// console.log(areYouPlayingBanjo('Ramy'));
+console.log(areYouPlayingBanjo('Ramy'));
 
 
 
 // ==========================================================================> Removing Elements
 
-// function removeEveryOther(arr){
+function removeEveryOther(arr){
   
-//   let result = arr.filter((item, index) => index % 2 === 0)
-//   console.log(result);
-// }
-// removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
+  let result = arr.filter((item, index) => index % 2 === 0)
+  console.log(result);
+}
+removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
 
 // ==========================================================================> Transportation On Vacation
 
