@@ -1274,7 +1274,7 @@
 //       return 'eight'
 //     case 9:
 //       return 'nine'
-  
+
 //     default:'wrong number'
 //   }
 // }
@@ -1294,7 +1294,7 @@
 
 // ==========================================================================> Exclamation marks series
 // function remove (string) {
-  
+
 //   return string.replace(/!+/g, "")+"!"; 
 // }
 // console.log(remove('hi!!!!'));
@@ -1303,48 +1303,84 @@
 
 // ==========================================================================> Are You Playing Banjo
 
-function areYouPlayingBanjo(name) {
-      if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
-      return `${name} plays banjo`
-    }else{
-      return `${name} does not play banjo`
-    }
+// function areYouPlayingBanjo(name) {
+//       if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
+//       return `${name} plays banjo`
+//     }else{
+//       return `${name} does not play banjo`
+//     }
 
-    // or
+//     // or
 
-    return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
-}
+//     return name[0].toLowerCase() === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
+// }
 
-console.log(areYouPlayingBanjo('Ramy'));
+// console.log(areYouPlayingBanjo('Ramy'));
 
 
 
 // ==========================================================================> Removing Elements
 
-function removeEveryOther(arr){
-  
-  let result = arr.filter((item, index) => index % 2 === 0)
-  console.log(result);
-}
-removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
+// function removeEveryOther(arr){
+
+//   let result = arr.filter((item, index) => index % 2 === 0)
+//   console.log(result);
+// }
+// removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep" ])
 
 // ==========================================================================> Transportation On Vacation
 
-function rentalCarCost(d) {
-    let price = 40*d;
-    if (d >= 7) {
-      return price - 50
-    }else if (d >= 3) {
-      return price - 20
-    }else{
-      return price
-    }
-}
-console.log(rentalCarCost(10));
+// function rentalCarCost(d) {
+//     let price = 40*d;
+//     if (d >= 7) {
+//       return price - 50
+//     }else if (d >= 3) {
+//       return price - 20
+//     }else{
+//       return price
+//     }
+// }
+// console.log(rentalCarCost(10));
 
 // ==========================================================================> Exclusive Xor Operator
-function xor(a, b) {
-  return a === b ? false : true
-}
-console.log(xor('true', 'false'));
+// function xor(a, b) {
+//   return a === b ? false : true
+// }
+// console.log(xor('true', 'false'));
 
+
+// ==========================================================================> Find the first non-consecutive number
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1 ; i++) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      console.log(i + 1);
+      return arr[i + 1]
+    }
+  }
+  return null
+}
+firstNonConsecutive([1,2,3,4,6,7,8])
+
+// ==========================================================================> Volume of a Cuboid
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height 
+  }
+}
+console.log(Kata.getVolumeOfCuboid(6,2,5));
+
+
+// ==========================================================================> Formatting decimal places #0
+function twoDecimalPlaces(n) {
+  return Number(n.toFixed(2))
+    
+}
+console.log(twoDecimalPlaces(5.5589));
+
+// ==========================================================================> Dollar And Cents
+
+function formatMoney(amount){
+   return `$${amount.toFixed(2)}`
+}
+console.log(formatMoney(3));
