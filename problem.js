@@ -1350,37 +1350,76 @@
 
 
 // ==========================================================================> Find the first non-consecutive number
-function firstNonConsecutive(arr) {
-  for (let i = 0; i < arr.length - 1 ; i++) {
-    if (arr[i] + 1 !== arr[i + 1]) {
-      console.log(i + 1);
-      return arr[i + 1]
-    }
-  }
-  return null
-}
-firstNonConsecutive([1,2,3,4,6,7,8])
+// function firstNonConsecutive(arr) {
+//   for (let i = 0; i < arr.length - 1 ; i++) {
+//     if (arr[i] + 1 !== arr[i + 1]) {
+//       console.log(i + 1);
+//       return arr[i + 1]
+//     }
+//   }
+//   return null
+// }
+// firstNonConsecutive([1,2,3,4,6,7,8])
 
 // ==========================================================================> Volume of a Cuboid
 
-class Kata {
-  static getVolumeOfCuboid(length, width, height) {
-    return length * width * height 
-  }
-}
-console.log(Kata.getVolumeOfCuboid(6,2,5));
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//     return length * width * height 
+//   }
+// }
+// console.log(Kata.getVolumeOfCuboid(6,2,5));
 
 
 // ==========================================================================> Formatting decimal places #0
-function twoDecimalPlaces(n) {
-  return Number(n.toFixed(2))
+// function twoDecimalPlaces(n) {
+//   return Number(n.toFixed(2))
     
-}
-console.log(twoDecimalPlaces(5.5589));
+// }
+// console.log(twoDecimalPlaces(5.5589));
 
 // ==========================================================================> Dollar And Cents
 
-function formatMoney(amount){
-   return `$${amount.toFixed(2)}`
+// function formatMoney(amount){
+//    return `$${amount.toFixed(2)}`
+// }
+// console.log(formatMoney(3));
+
+// ==========================================================================> Find The Position
+
+function position(letter){
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`;
+  // return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
 }
-console.log(formatMoney(3));
+console.log(position('m'));
+ 
+// ==========================================================================> Opposites Attract
+function lovefunc(flower1, flower2){
+  return flower1 % 2 !== flower2 % 2
+}
+console.log(lovefunc(2,2));
+
+// ==========================================================================> No Zeros For Heros
+function noBoringZeros(n) {
+  return  +n.toString().replace(/0+$/ , "")
+}
+
+console.log(noBoringZeros(45520));
+// ==========================================================================>Get The Mean Of An Array 
+function getAverage(marks){
+  //  let sum = 0;
+  //  for (let i = 0; i < marks.length; i++) {
+  //     sum += marks[i];
+  //  }
+  //  return Math.floor(sum / marks.length)
+
+  return Math.floor(marks.reduce( (a,b)=> a + b,0 ) / marks.length)
+}
+console.log(getAverage([1, 2, 3, 4, 5]));
+
+// ==========================================================================>Grasshopper - Array Mean
+function findAverage(nums) {
+ return nums.reduce( (sum , num)=> sum + num , 0  )/ nums.length 
+}
+console.log(findAverage([1,3,5,7]));
