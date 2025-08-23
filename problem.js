@@ -1387,39 +1387,58 @@
 
 // ==========================================================================> Find The Position
 
-function position(letter){
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
-  return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`;
-  // return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
-}
-console.log(position('m'));
+// function position(letter){
+//   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+//   return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`;
+//   // return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
+// }
+// console.log(position('m'));
  
 // ==========================================================================> Opposites Attract
-function lovefunc(flower1, flower2){
-  return flower1 % 2 !== flower2 % 2
-}
-console.log(lovefunc(2,2));
+// function lovefunc(flower1, flower2){
+//   return flower1 % 2 !== flower2 % 2
+// }
+// console.log(lovefunc(2,2));
 
 // ==========================================================================> No Zeros For Heros
-function noBoringZeros(n) {
-  return  +n.toString().replace(/0+$/ , "")
-}
+// function noBoringZeros(n) {
+//   return  +n.toString().replace(/0+$/ , "")
+// }
 
-console.log(noBoringZeros(45520));
+// console.log(noBoringZeros(45520));
 // ==========================================================================>Get The Mean Of An Array 
-function getAverage(marks){
-  //  let sum = 0;
-  //  for (let i = 0; i < marks.length; i++) {
-  //     sum += marks[i];
-  //  }
-  //  return Math.floor(sum / marks.length)
+// function getAverage(marks){
+//   //  let sum = 0;
+//   //  for (let i = 0; i < marks.length; i++) {
+//   //     sum += marks[i];
+//   //  }
+//   //  return Math.floor(sum / marks.length)
 
-  return Math.floor(marks.reduce( (a,b)=> a + b,0 ) / marks.length)
-}
-console.log(getAverage([1, 2, 3, 4, 5]));
+//   return Math.floor(marks.reduce( (a,b)=> a + b,0 ) / marks.length)
+// }
+// console.log(getAverage([1, 2, 3, 4, 5]));
 
 // ==========================================================================>Grasshopper - Array Mean
 function findAverage(nums) {
- return nums.reduce( (sum , num)=> sum + num , 0  )/ nums.length 
+  return nums.reduce( (sum , num)=> sum + num , 0  )/ nums.length 
 }
 console.log(findAverage([1,3,5,7]));
+
+// ==========================================================================>Remove exclamation marks
+function remove (string) {
+  
+  return string.replace(/!+/g, ""); 
+}
+console.log(remove('hi!!!!'));
+
+// ==========================================================================> Remove First and Last Character
+
+function removeChar(str){
+ if (str.length <= 2) {
+    return "";
+  }
+    return str.slice(1, -1);
+  
+};
+console.log(removeChar("hello"));
+console.log(removeChar("hi"));
