@@ -1419,26 +1419,62 @@
 // console.log(getAverage([1, 2, 3, 4, 5]));
 
 // ==========================================================================>Grasshopper - Array Mean
-function findAverage(nums) {
-  return nums.reduce( (sum , num)=> sum + num , 0  )/ nums.length 
-}
-console.log(findAverage([1,3,5,7]));
+// function findAverage(nums) {
+//   return nums.reduce( (sum , num)=> sum + num , 0  )/ nums.length 
+// }
+// console.log(findAverage([1,3,5,7]));
 
 // ==========================================================================>Remove exclamation marks
-function remove (string) {
+// function remove (string) {
   
-  return string.replace(/!+/g, ""); 
-}
-console.log(remove('hi!!!!'));
+//   return string.replace(/!+/g, ""); 
+// }
+// console.log(remove('hi!!!!'));
 
 // ==========================================================================> Remove First and Last Character
 
-function removeChar(str){
- if (str.length <= 2) {
-    return "";
-  }
-    return str.slice(1, -1);
+// function removeChar(str){
+//  if (str.length <= 2) {
+//     return "";
+//   }
+//     return str.slice(1, -1);
   
-};
-console.log(removeChar("hello"));
-console.log(removeChar("hi"));
+// };
+// console.log(removeChar("hello"));
+// console.log(removeChar("hi"));
+// ==========================================================================> Reversed Strings
+function solution(str){
+  return str.split('').reverse().join('')
+}
+console.log(solution("world"));
+// ==========================================================================> Convert a Boolean to a String
+function booleanToString(b){
+  return b == true ? 'true' : 'false'
+}
+
+// ==========================================================================> Convert a string to an array
+function stringToArray(string){
+  return string.split(' ')
+  
+}
+console.log(stringToArray('I love arrays they are my favorite'));
+
+// ==========================================================================> Sum The Strings
+function sumStr(a,b) {
+  return (Number(a) + Number(b)).toString()
+}
+console.log(sumStr('4' , '5'));
+
+// ==========================================================================> String cleaning
+function stringClean(s){
+  return s.replace(/[0-9]/g , '')
+  // return s.replace( /\d/g, "" )
+
+}
+console.log(stringClean('This loo44ks5 grea8t!'));
+
+  // ==========================================================================> Reversed Words
+  function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+}
+console.log(reverseWords('The greatest victory is that which requires no battle'));
