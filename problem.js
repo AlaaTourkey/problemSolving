@@ -1443,35 +1443,35 @@
 // console.log(removeChar("hello"));
 // console.log(removeChar("hi"));
 // ==========================================================================> Reversed Strings
-function solution(str){
-  return str.split('').reverse().join('')
-}
-console.log(solution("world"));
+// function solution(str){
+//   return str.split('').reverse().join('')
+// }
+// console.log(solution("world"));
 // ==========================================================================> Convert a Boolean to a String
-function booleanToString(b){
-  return b == true ? 'true' : 'false'
-}
+// function booleanToString(b){
+//   return b == true ? 'true' : 'false'
+// }
 
 // ==========================================================================> Convert a string to an array
-function stringToArray(string){
-  return string.split(' ')
+// function stringToArray(string){
+//   return string.split(' ')
   
-}
-console.log(stringToArray('I love arrays they are my favorite'));
+// }
+// console.log(stringToArray('I love arrays they are my favorite'));
 
 // ==========================================================================> Sum The Strings
-function sumStr(a,b) {
-  return (Number(a) + Number(b)).toString()
-}
-console.log(sumStr('4' , '5'));
+// function sumStr(a,b) {
+//   return (Number(a) + Number(b)).toString()
+// }
+// console.log(sumStr('4' , '5'));
 
 // ==========================================================================> String cleaning
-function stringClean(s){
-  return s.replace(/[0-9]/g , '')
-  // return s.replace( /\d/g, "" )
+// function stringClean(s){
+//   return s.replace(/[0-9]/g , '')
+//   // return s.replace( /\d/g, "" )
 
-}
-console.log(stringClean('This loo44ks5 grea8t!'));
+// }
+// console.log(stringClean('This loo44ks5 grea8t!'));
 
   // ==========================================================================> Reversed Words
   function reverseWords(str){
