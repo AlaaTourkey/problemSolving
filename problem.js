@@ -1474,7 +1474,30 @@
 // console.log(stringClean('This loo44ks5 grea8t!'));
 
   // ==========================================================================> Reversed Words
-//   function reverseWords(str){
-//   return str.split(' ').reverse().join(' ')
-// }
-// console.log(reverseWords('The greatest victory is that which requires no battle'));
+  //   function reverseWords(str){
+    //   return str.split(' ').reverse().join(' ')
+    // }
+    // console.log(reverseWords('The greatest victory is that which requires no battle'));
+    
+
+// ==========================================================================>Template Strings
+var templateStrings = function(noun, adjective) {
+  return `${noun} and ${adjective}`
+}
+
+// ==========================================================================> Grasshopper - Combine strings
+const combineNames = function(firstName , lastName ){
+  return `${firstName} ${lastName}`
+}
+console.log(combineNames('James' , 'Stevens'));
+
+// ==========================================================================> ES6 string addition
+
+function joinStrings(string1, string2){
+  return `${string1} ${string2}`
+}
+console.log(joinStrings('hi' ,'Alaa' ));
+// ==========================================================================> Is the string uppercase?
+String.prototype.isUpperCase = function() {
+  return this.toString() === this.toUpperCase();
+}
