@@ -1374,7 +1374,7 @@
 // ==========================================================================> Formatting decimal places #0
 // function twoDecimalPlaces(n) {
 //   return Number(n.toFixed(2))
-    
+
 // }
 // console.log(twoDecimalPlaces(5.5589));
 
@@ -1393,7 +1393,7 @@
 //   // return `Position of alphabet: ${letter.charCodeAt(0) - 96}`
 // }
 // console.log(position('m'));
- 
+
 // ==========================================================================> Opposites Attract
 // function lovefunc(flower1, flower2){
 //   return flower1 % 2 !== flower2 % 2
@@ -1426,7 +1426,7 @@
 
 // ==========================================================================>Remove exclamation marks
 // function remove (string) {
-  
+
 //   return string.replace(/!+/g, ""); 
 // }
 // console.log(remove('hi!!!!'));
@@ -1438,7 +1438,7 @@
 //     return "";
 //   }
 //     return str.slice(1, -1);
-  
+
 // };
 // console.log(removeChar("hello"));
 // console.log(removeChar("hi"));
@@ -1455,7 +1455,7 @@
 // ==========================================================================> Convert a string to an array
 // function stringToArray(string){
 //   return string.split(' ')
-  
+
 // }
 // console.log(stringToArray('I love arrays they are my favorite'));
 
@@ -1473,31 +1473,67 @@
 // }
 // console.log(stringClean('This loo44ks5 grea8t!'));
 
-  // ==========================================================================> Reversed Words
-  //   function reverseWords(str){
-    //   return str.split(' ').reverse().join(' ')
-    // }
-    // console.log(reverseWords('The greatest victory is that which requires no battle'));
-    
+// ==========================================================================> Reversed Words
+//   function reverseWords(str){
+//   return str.split(' ').reverse().join(' ')
+// }
+// console.log(reverseWords('The greatest victory is that which requires no battle'));
+
 
 // ==========================================================================>Template Strings
-var templateStrings = function(noun, adjective) {
-  return `${noun} and ${adjective}`
-}
+// var templateStrings = function(noun, adjective) {
+//   return `${noun} and ${adjective}`
+// }
 
 // ==========================================================================> Grasshopper - Combine strings
-const combineNames = function(firstName , lastName ){
-  return `${firstName} ${lastName}`
-}
-console.log(combineNames('James' , 'Stevens'));
+// const combineNames = function(firstName , lastName ){
+//   return `${firstName} ${lastName}`
+// }
+// console.log(combineNames('James' , 'Stevens'));
 
 // ==========================================================================> ES6 string addition
 
-function joinStrings(string1, string2){
-  return `${string1} ${string2}`
-}
-console.log(joinStrings('hi' ,'Alaa' ));
+// function joinStrings(string1, string2){
+//   return `${string1} ${string2}`
+// }
+// console.log(joinStrings('hi' ,'Alaa' ));
 // ==========================================================================> Is the string uppercase?
-String.prototype.isUpperCase = function() {
-  return this.toString() === this.toUpperCase();
+// String.prototype.isUpperCase = function() {
+//   return this.toString() === this.toUpperCase();
+// }
+
+// ==========================================================================> Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+  return [...new Set(arr1.concat(arr2))].sort((a, b) => a - b);
 }
+console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
+
+// ==========================================================================> Sum Mixed Array
+
+function sumMix(x) {
+  //  return x.map((a)=> a*1 ).reduce( (sum , num)=> sum + num  )
+  return x.reduce((sum, num) => sum + +num)
+
+}
+console.log(sumMix([9, 3, '7', '3']));
+
+// ==========================================================================> Sum Arrays
+function sum(numbers) {
+  return numbers.reduce((sum, num) => sum + num, 0)
+}
+console.log(sum([1, 5.2, 4, 0, -1]));
+
+// ==========================================================================> Array plus array
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((sum, num) => sum + num, 0)
+}
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+// ==========================================================================> Printing Array elements with Comma delimiters
+function printArray(array) {
+  return array.join(",")
+}
+console.log(printArray(["h", "o", "l", "a"]));
+
+// ==========================================================================> 
+ 
