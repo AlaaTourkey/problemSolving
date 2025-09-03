@@ -1503,37 +1503,59 @@
 // }
 
 // ==========================================================================> Merge two sorted arrays into one
-function mergeArrays(arr1, arr2) {
-  return [...new Set(arr1.concat(arr2))].sort((a, b) => a - b);
-}
-console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
+// function mergeArrays(arr1, arr2) {
+//   return [...new Set(arr1.concat(arr2))].sort((a, b) => a - b);
+// }
+// console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2]));
 
 // ==========================================================================> Sum Mixed Array
 
-function sumMix(x) {
-  //  return x.map((a)=> a*1 ).reduce( (sum , num)=> sum + num  )
-  return x.reduce((sum, num) => sum + +num)
+// function sumMix(x) {
+//   //  return x.map((a)=> a*1 ).reduce( (sum , num)=> sum + num  )
+//   return x.reduce((sum, num) => sum + +num)
 
-}
-console.log(sumMix([9, 3, '7', '3']));
+// }
+// console.log(sumMix([9, 3, '7', '3']));
 
 // ==========================================================================> Sum Arrays
-function sum(numbers) {
-  return numbers.reduce((sum, num) => sum + num, 0)
-}
-console.log(sum([1, 5.2, 4, 0, -1]));
+// function sum(numbers) {
+//   return numbers.reduce((sum, num) => sum + num, 0)
+// }
+// console.log(sum([1, 5.2, 4, 0, -1]));
 
 // ==========================================================================> Array plus array
-function arrayPlusArray(arr1, arr2) {
-  return arr1.concat(arr2).reduce((sum, num) => sum + num, 0)
-}
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+// function arrayPlusArray(arr1, arr2) {
+//   return arr1.concat(arr2).reduce((sum, num) => sum + num, 0)
+// }
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
 
 // ==========================================================================> Printing Array elements with Comma delimiters
-function printArray(array) {
-  return array.join(",")
-}
-console.log(printArray(["h", "o", "l", "a"]));
+// function printArray(array) {
+//   return array.join(",")
+// }
+// console.log(printArray(["h", "o", "l", "a"]));
 
-// ==========================================================================> 
- 
+// ==========================================================================> Training JS #4: Basic data types--Array
+  function getLength(arr){
+    //return length of arr
+    return arr.length
+  }
+  function getFirst(arr){
+    //return the first element of arr
+    return arr[0]
+  }
+  function getLast(arr){
+    //return the last element of arr
+    return arr[arr.length-1]
+  }
+  function pushElement(arr){
+    var el=1;
+    //push el to arr
+    arr.push(el)
+    return arr
+  }
+  function popElement(arr){
+    //pop an element from arr
+    arr.pop()
+    return arr
+  }
