@@ -1536,8 +1536,8 @@
 // console.log(printArray(["h", "o", "l", "a"]));
 
 // ==========================================================================> Training JS #4: Basic data types--Array
-  function getLength(arr){
-    //return length of arr
+function getLength(arr){
+  //return length of arr
     return arr.length
   }
   function getFirst(arr){
@@ -1559,3 +1559,23 @@
     arr.pop()
     return arr
   }
+
+// ==========================================================================> Merging sorted integer arrays (without duplicates)
+function mergeArrays(a, b) {
+  return  [...new Set(a.concat(b))].sort((a, b) => a - b)
+}
+console.log(mergeArrays([2, 4, 6] , [1, 3, 5]));
+
+
+// ==========================================================================> Sum of differences in array
+function sumOfDifferences(arr) {
+   arr.sort( (a , b)=> b - a )
+
+   let sum = 0
+   for (let i = 0; i < arr.length - 1; i++) {
+     sum += arr[i] - arr[i + 1] ;
+   }
+   return sum;
+
+}
+console.log(sumOfDifferences([1, 2, 10]));
