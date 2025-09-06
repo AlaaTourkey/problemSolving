@@ -1536,46 +1536,55 @@
 // console.log(printArray(["h", "o", "l", "a"]));
 
 // ==========================================================================> Training JS #4: Basic data types--Array
-function getLength(arr){
-  //return length of arr
-    return arr.length
-  }
-  function getFirst(arr){
-    //return the first element of arr
-    return arr[0]
-  }
-  function getLast(arr){
-    //return the last element of arr
-    return arr[arr.length-1]
-  }
-  function pushElement(arr){
-    var el=1;
-    //push el to arr
-    arr.push(el)
-    return arr
-  }
-  function popElement(arr){
-    //pop an element from arr
-    arr.pop()
-    return arr
-  }
+// function getLength(arr){
+//   //return length of arr
+//     return arr.length
+//   }
+//   function getFirst(arr){
+//     //return the first element of arr
+//     return arr[0]
+//   }
+//   function getLast(arr){
+//     //return the last element of arr
+//     return arr[arr.length-1]
+//   }
+//   function pushElement(arr){
+//     var el=1;
+//     //push el to arr
+//     arr.push(el)
+//     return arr
+//   }
+//   function popElement(arr){
+//     //pop an element from arr
+//     arr.pop()
+//     return arr
+//   }
 
 // ==========================================================================> Merging sorted integer arrays (without duplicates)
-function mergeArrays(a, b) {
-  return  [...new Set(a.concat(b))].sort((a, b) => a - b)
-}
-console.log(mergeArrays([2, 4, 6] , [1, 3, 5]));
+// function mergeArrays(a, b) {
+//   return  [...new Set(a.concat(b))].sort((a, b) => a - b)
+// }
+// console.log(mergeArrays([2, 4, 6] , [1, 3, 5]));
 
 
 // ==========================================================================> Sum of differences in array
-function sumOfDifferences(arr) {
-   arr.sort( (a , b)=> b - a )
+// function sumOfDifferences(arr) {
+  //    arr.sort( (a , b)=> b - a )
+  
+//    let sum = 0
+//    for (let i = 0; i < arr.length - 1; i++) {
+//      sum += arr[i] - arr[i + 1] ;
+//    }
+//    return sum;
 
-   let sum = 0
-   for (let i = 0; i < arr.length - 1; i++) {
-     sum += arr[i] - arr[i + 1] ;
-   }
-   return sum;
+// }
+// console.log(sumOfDifferences([1, 2, 10]));
 
+// ==========================================================================> Find the smallest integer in the array
+function findSmallestInt(arr) {
+  arr.sort((a, b) => a - b)
+    return arr[0]
+
+   
 }
-console.log(sumOfDifferences([1, 2, 10]));
+console.log(findSmallestInt([34, 15, 88, 2]));
