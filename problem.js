@@ -1583,8 +1583,24 @@ console.log(sumOfDifferences([1, 2, 10]));
 // ==========================================================================> Find the smallest integer in the array
 function findSmallestInt(arr) {
   arr.sort((a, b) => a - b)
-    return arr[0]
+  return arr[0]
 
    
 }
 console.log(findSmallestInt([34, 15, 88, 2]));
+
+// ==========================================================================> Remove the time
+function shortenToDate(longDate) {
+  return longDate.split(",")[0];
+}
+console.log(shortenToDate("Friday May 2, 7pm"));
+// ==========================================================================> Do you speak "English"?
+function spEng(sentence){
+  return sentence.toLowerCase().includes("english")
+}
+console.log(spEng("abcEnglishdef"));
+// ==========================================================================> Remove First and Last Character Part Two
+function array(string) {
+  return string.split(",").slice(1,-1).join(" ") || null
+}
+console.log(array("1,2,3,4"));
