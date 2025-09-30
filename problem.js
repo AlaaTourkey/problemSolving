@@ -1568,39 +1568,55 @@
 
 
 // ==========================================================================> Sum of differences in array
-function sumOfDifferences(arr) {
-     arr.sort( (a , b)=> b - a )
+// function sumOfDifferences(arr) {
+//      arr.sort( (a , b)=> b - a )
   
-   let sum = 0
-   for (let i = 0; i < arr.length - 1; i++) {
-     sum += arr[i] - arr[i + 1] ;
-   }
-   return sum;
+//    let sum = 0
+//    for (let i = 0; i < arr.length - 1; i++) {
+//      sum += arr[i] - arr[i + 1] ;
+//    }
+//    return sum;
 
-}
-console.log(sumOfDifferences([1, 2, 10]));
+// }
+// console.log(sumOfDifferences([1, 2, 10]));
 
 // ==========================================================================> Find the smallest integer in the array
-function findSmallestInt(arr) {
-  arr.sort((a, b) => a - b)
-  return arr[0]
+// function findSmallestInt(arr) {
+//   arr.sort((a, b) => a - b)
+//   return arr[0]
 
    
-}
-console.log(findSmallestInt([34, 15, 88, 2]));
+// }
+// console.log(findSmallestInt([34, 15, 88, 2]));
 
 // ==========================================================================> Remove the time
-function shortenToDate(longDate) {
-  return longDate.split(",")[0];
-}
-console.log(shortenToDate("Friday May 2, 7pm"));
+// function shortenToDate(longDate) {
+//   return longDate.split(",")[0];
+// }
+// console.log(shortenToDate("Friday May 2, 7pm"));
 // ==========================================================================> Do you speak "English"?
-function spEng(sentence){
-  return sentence.toLowerCase().includes("english")
-}
-console.log(spEng("abcEnglishdef"));
+// function spEng(sentence){
+//   return sentence.toLowerCase().includes("english")
+// }
+// console.log(spEng("abcEnglishdef"));
 // ==========================================================================> Remove First and Last Character Part Two
-function array(string) {
-  return string.split(",").slice(1,-1).join(" ") || null
+// function array(string) {
+  //   return string.split(",").slice(1,-1).join(" ") || null
+// }
+// console.log(array("1,2,3,4"));
+// ==========================================================================> Parse nice int from char problem
+
+function getAge(inputString){
+  return parseInt(inputString);
 }
-console.log(array("1,2,3,4"));
+console.log(getAge("4 years old"));
+
+// ==========================================================================> Who is going to pay for the wall?
+function whoIsPaying(name){
+  return name.length >= 2 ? [name] : [name , name.slice(0,2)]
+  
+}
+console.log(whoIsPaying("Mexico"));
+console.log(whoIsPaying("Me"));
+
+// ==========================================================================> Who is going to pay for the wall?
