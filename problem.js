@@ -1606,17 +1606,17 @@
 // console.log(array("1,2,3,4"));
 // ==========================================================================> Parse nice int from char problem
 
-function getAge(inputString){
-  return parseInt(inputString);
-}
-console.log(getAge("4 years old"));
+// function getAge(inputString){
+//   return parseInt(inputString);
+// }
+// console.log(getAge("4 years old"));
 
 // ==========================================================================> Who is going to pay for the wall?
-function whoIsPaying(name){
-  return name.length >= 2 ? [name] : [name , name.slice(0,2)]
+// function whoIsPaying(name){
+//   return name.length >= 2 ? [name] : [name , name.slice(0,2)]
   
-}
-console.log(whoIsPaying("Mexico"));
-console.log(whoIsPaying("Me"));
+// }
+// console.log(whoIsPaying("Mexico"));
+// console.log(whoIsPaying("Me"));
 
 // ==========================================================================> Who is going to pay for the wall?
