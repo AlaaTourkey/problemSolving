@@ -1570,7 +1570,7 @@
 // ==========================================================================> Sum of differences in array
 // function sumOfDifferences(arr) {
 //      arr.sort( (a , b)=> b - a )
-  
+
 //    let sum = 0
 //    for (let i = 0; i < arr.length - 1; i++) {
 //      sum += arr[i] - arr[i + 1] ;
@@ -1585,7 +1585,7 @@
 //   arr.sort((a, b) => a - b)
 //   return arr[0]
 
-   
+
 // }
 // console.log(findSmallestInt([34, 15, 88, 2]));
 
@@ -1601,7 +1601,7 @@
 // console.log(spEng("abcEnglishdef"));
 // ==========================================================================> Remove First and Last Character Part Two
 // function array(string) {
-  //   return string.split(",").slice(1,-1).join(" ") || null
+//   return string.split(",").slice(1,-1).join(" ") || null
 // }
 // console.log(array("1,2,3,4"));
 // ==========================================================================> Parse nice int from char problem
@@ -1614,9 +1614,41 @@
 // ==========================================================================> Who is going to pay for the wall?
 // function whoIsPaying(name){
 //   return name.length >= 2 ? [name] : [name , name.slice(0,2)]
-  
+
 // }
 // console.log(whoIsPaying("Mexico"));
 // console.log(whoIsPaying("Me"));
 
-// ==========================================================================> Who is going to pay for the wall?
+// ==========================================================================> Remove Duplicates from Sorted Array
+var removeDuplicates = function (nums) {
+  if (nums.length ===0 ) {
+    return 0
+    }
+
+    let k = 0;
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i] !== nums[i + 1]) {
+        nums[k] = nums[i];
+        k++;
+        
+      }
+    }
+    return k;
+};
+
+console.log(removeDuplicates([1, 1, 2]));
+
+
+// ==========================================================================> Remove Element
+
+var removeElement = function(nums, val) {
+   let k = 0 ;
+   for (let i = 0; i < nums.length; i++) {
+      if (nums[i] !== val) {
+        nums[k] = nums[i]
+        k++
+      }
+   }
+   return k
+};
+console.log(removeElement([3,2,2,3] , 3));
