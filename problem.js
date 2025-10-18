@@ -1620,35 +1620,35 @@
 // console.log(whoIsPaying("Me"));
 
 // ==========================================================================> Remove Duplicates from Sorted Array
-var removeDuplicates = function (nums) {
-  if (nums.length ===0 ) {
-    return 0
-    }
+// var removeDuplicates = function (nums) {
+//   if (nums.length ===0 ) {
+//     return 0
+//     }
 
-    let k = 0;
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] !== nums[i + 1]) {
-        nums[k] = nums[i];
-        k++;
+//     let k = 0;
+//     for (let i = 0; i < nums.length; i++) {
+//       if (nums[i] !== nums[i + 1]) {
+//         nums[k] = nums[i];
+//         k++;
         
-      }
-    }
-    return k;
-};
+//       }
+//     }
+//     return k;
+// };
 
-console.log(removeDuplicates([1, 1, 2]));
+// console.log(removeDuplicates([1, 1, 2]));
 
 
 // ==========================================================================> Remove Element
 
-var removeElement = function(nums, val) {
-   let k = 0 ;
-   for (let i = 0; i < nums.length; i++) {
-      if (nums[i] !== val) {
-        nums[k] = nums[i]
-        k++
-      }
-   }
-   return k
-};
-console.log(removeElement([3,2,2,3] , 3));
+// var removeElement = function(nums, val) {
+//    let k = 0 ;
+//    for (let i = 0; i < nums.length; i++) {
+//       if (nums[i] !== val) {
+//         nums[k] = nums[i]
+//         k++
+//       }
+//    }
+//    return k
+// };
+// console.log(removeElement([3,2,2,3] , 3));
